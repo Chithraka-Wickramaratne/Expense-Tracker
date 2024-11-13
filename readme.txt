@@ -1,50 +1,114 @@
-==========  Project: Text-Based Finance Tracker  ==========
+Here’s a README with headers and symbols as you requested:
 
-## Overview
------------------
+---
 
-The purpose of this financial management system is to assist users in keeping track of their earnings and outlays, examining summaries, and effectively managing financial information. The system's console-based menu offers an intuitive user interface.
+# 📊 Expense Tracker CLI
 
-## Usage
------------------
+A command-line **Expense Tracker** application developed in Python. This application allows users to record, manage, and analyze their personal finances, providing a straightforward way to track income and expenses, view summaries, and save or load data from a file.
 
-1). **Record a New Entry**: If User Choose Option 1, Can enter inputs (type,ammount,category,year,month,date)
+## ✨ Features
 
-2). **View All Recorded Entries**: If User Option Choose 2, User can see all the records that he enterd
+- 📥 **Record New Entry**: Log income or expenses by entering type, amount, category, year, month, and date.
+- 📄 **View All Entries**: Display a list of all recorded income and expense entries.
+- 🧮 **Calculate Totals**: View total income, total expenses, and net balance (income vs. expenses).
+- 📅 **Monthly Summary**: Get a summary of income and expenses for a specific month.
+- 💾 **Save Data**: Save all recorded entries to a file (e.g., `.txt` or `.csv`).
+- 📂 **Load Data**: Load financial data from a previously saved file.
+- 🚪 **Exit**: Close the application safely.
 
-3). **Calculate Totals**: If User choos Option 3,Calculate and display the total income, total expenses, and net income.
+## ⚙️ Technologies Used
 
-4). **View Summary For a Specific Month**: If User choos Option 4, View a summary of a specific month and year.
-	Ex: User wants to View year 2024th first month summary, User can input Year as 2024 and month 01 
+- **Programming Language**: Python
 
-5). **Save Financial Data**: IF User choose 5, Save financial data to a csv or txt file. The user can choose between txt and csv file formats.User Can save a file only if given file exsist the device.(Sometimes if user inputs only file name, entries are not recorded to the file. If this occures give fully file path, then it will resolve)
-	Ex: User enters example.csv as a file name, data will be save to csv file
+## 🚀 Getting Started
 
-6). **Load Financial Data**: If User choose 6, Load financial data from a csv or txt file
+### 🔧 Prerequisites
 
-7). **Exit**: If User choose 7, Exit the program.
+- **Python 3.x**
 
-## Challenges Faced
------------------
+### 📥 Setup Instructions
 
-- Ensuring proper validation for user inputs, such as numeric values and correct date formats.
-- Managing different file formats (csv and txt) for saving and loading financial data.
-- Being unfamilliar with some Libraries was a big challenge
-- Some functions were not interact propperly with other functions
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Chithraka-Wickramaratne/Expense-Tracker.git
+   cdExpense-Tracker
+   ```
 
-## Solutions Implemented
------------------
+2. **Run the Program**:
+   ```bash
+   python expense_tracker.py
+   ```
 
-- Put input validation into place to make sure users enter data accurately for amount, type, date, etc.
-- Added support for both .csv and .txt file formats, allowing users to choose their preferred format for saving and loading financial
-  data.
-- Studies were conducted on those libraries from external resources like U tube, chat gpt, websites, etc...
-- Making changes within functions to enable interactions between functions
+## 📖 Usage Guide
 
-## Additional Information
------------------
-- Make sure your device has python installed before running this program.
-- Make sure your device has installed csv, sys,calender,os and re libraries before running this program. 
-- For improved code organization, this program's functionalities are modularized and financial entries are stored on a list.
-- Unexpected user inputs and file-related problems are handled properly through the implementation of error handling.
+Upon running the program, you’ll see a menu with options:
 
+1. **Record a New Entry**  
+   - Input transaction details:
+     - **Type**: Income or Expense
+     - **Amount**: Transaction amount
+     - **Category**: E.g., groceries, salary, rent
+     - **Date**: Enter year, month, and day of the transaction
+
+2. **View All Entries**  
+   - Shows all recorded entries in a list format.
+
+3. **Calculate Totals**  
+   - Displays:
+     - Total Income
+     - Total Expense
+     - Net Balance (Total Income - Total Expenses)
+
+4. **Monthly Summary**  
+   - Enter the specific month and year to view income and expenses for that period.
+
+5. **Save Data**  
+   - Input a filename (e.g., `expenses.txt` or `expenses.csv`) to save your financial data.
+
+6. **Load Data**  
+   - Load financial data from a previously saved file.
+
+7. **Exit**  
+   - Safely exit the application.
+
+## 💾 Saving and Loading Data
+
+- **Save Financial Data**: Choose a filename to save current entries to a file.
+- **Load Financial Data**: Load data from a file, allowing you to continue where you left off.
+
+## 📜 Example Session
+
+```plaintext
+Welcome to Expense Tracker!
+Please choose an option:
+1. Record a New Entry
+2. View All Recorded Entries
+3. Calculate Totals
+4. View Summary For a Specific Month
+5. Save Financial Data
+6. Load Financial Data
+7. Exit
+
+> 1
+Enter type (Income/Expense): Income
+Enter amount: 500
+Enter category: Salary
+Enter year: 2024
+Enter month: 11
+Enter date: 13
+Entry recorded successfully!
+
+> 3
+Total Income: $500
+Total Expense: $0
+Net Balance: $500
+
+> 7
+Goodbye!
+```
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
+
+--- 
